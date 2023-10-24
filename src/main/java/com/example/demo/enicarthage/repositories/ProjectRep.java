@@ -25,7 +25,7 @@ public interface ProjectRep extends JpaRepository<project, Long> {
 	
 	 // le nom de path de recherche
     @RestResource(path = "/designation")
-    List<project> findByDescriptionContains(@Param("desc") String desc);
+    List<project> findBySujetContains(@Param("desc") String desc);
 
     @RestResource(path = "/pagination")
     Page<project> findByDescriptionContains(@Param("desc") String desc, Pageable pageable);

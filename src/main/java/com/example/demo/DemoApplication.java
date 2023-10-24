@@ -41,17 +41,14 @@ public class DemoApplication implements CommandLineRunner{
         categoryDao.save(c2);
         categoryDao.save(c3);
         categoryDao.save(c4);
-        projDao.save(new project(null, "recherche&developpement","developement en python des API REST","informatique",c3));
-        projDao.save(new project(null, "data science","création des models en AI", "infotronique",c1));
-        /* projDao.save(new project(null, "HP mini S5",258963, 3,c1));
-        projDao.save(new project(null, "Telephone",14000, 3,c1));
-        projDao.save(new project(null, "Chargeur HP PRO",10000, 3,c1));
-        projDao.save(new project(null, "Refrigerateur",10400, 3,c2));
-        projDao.save(new project(null, "Washing",108900, 3,c2));
-        projDao.save(new project(null, "Lait Cachier",108900, 3,c3));
-        projDao.save(new project(null, "Buisquit",1080, 3,c3));
-        projDao.save(new project(null, "Jus",8900, 3,c3));
-        projDao.save(new project(null, "Manette",8900, 3,c4));*/
+       // projDao.save(new project(null, "recherche&developpement","developement en python des API REST","informatique",c3));
+       // projDao.save(new project(null, "data science","création des models en AI", "infotronique",c1));
+        //projDao.save(new project(null, "FullStack","developement en angular d'un site web","informatique",c2));
+       // projDao.save(new project(null, "recherche&developpement","developement en python des API REST","informatique",c3));
+        projDao.save(new project(null, "FullStack","developement en angular d'un site web","informatique",c2));
+
+
+       
         projDao.findAll().forEach(p->{
             System.out.println(p.getDescription());
         });

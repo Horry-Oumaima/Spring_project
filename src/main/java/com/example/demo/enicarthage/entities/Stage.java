@@ -13,7 +13,7 @@ public class Stage {
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
-	private long idStage;
+	private long id_stage;
 	private String nomStudent;
 	private String prenomStudent;
 	private String mailStudent;
@@ -24,10 +24,10 @@ public class Stage {
 	private String date_debut;
 	private String feedback;
 	public long getIdStage() {
-		return idStage;
+		return id_stage;
 	}
 	public void setIdStage(long idStage) {
-		this.idStage = idStage;
+		this.id_stage = idStage;
 	}
 	public String getNomStudent() {
 		return nomStudent;
@@ -91,14 +91,14 @@ public class Stage {
 		this.mailStudent = mailStudent;
 		this.mailEncadrant = mailEncadrant;
 		this.sujet = sujet;
-		entreprise = entreprise;
+		this.entreprise = entreprise;
 		this.duree = durée;
 		this.date_debut = date_debut;
 		this.feedback = feedback;
 	}
 	@Override
 	public String toString() {
-		return "Stage [idStage=" + idStage + ", nomStudent=" + nomStudent + ", prenomStudent=" + prenomStudent
+		return "Stage [idStage=" + id_stage + ", nomStudent=" + nomStudent + ", prenomStudent=" + prenomStudent
 				+ ", mailStudent=" + mailStudent + ", mailEncadrant=" + mailEncadrant + ", sujet=" + sujet
 				+ ", Entreprise=" + entreprise + ", durée=" + duree + ", date_debut=" + date_debut + ", feedback="
 				+ feedback + "]";

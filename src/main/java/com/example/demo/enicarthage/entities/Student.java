@@ -17,6 +17,8 @@ public class Student {
 	private String nomStudent;
 	private String prenomStudent;
 	private String mailStudent;
+	private long id_stage;
+
 	
 	
 	
@@ -58,11 +60,13 @@ public class Student {
 		this.mailStudent = mailStudent;
 	}
 
-	public Student(String nomStudent, String prenomStudent, String mailStudent) {
+	public Student(String nomStudent, String prenomStudent, String mailStudent , long id_stage) {
 		super();
 		this.nomStudent = nomStudent;
 		this.prenomStudent = prenomStudent;
 		this.mailStudent = mailStudent;
+		this.id_stage=id_stage;
+		
 	}
 
 	@Override

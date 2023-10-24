@@ -33,7 +33,7 @@ class DemoApplicationTests {
     @Test
     public void TestcreateStage() {
     	    	
-    	Stage s =new Stage("Kharraf","Ismail","kharraf@gamail.com","youssef ben hlima","BI","Sigma conseil","un mois","01/06/2022","une bonne expérience");
+    	Stage s =new Stage("nes","ness","ness@gamail.com","baha boulabiar","dev","neapolis","deux mois","01/06/2022","une bonne expérience");
     	str.save(s);
 
     }
@@ -61,7 +61,7 @@ class DemoApplicationTests {
     private StudentRepository studentrep;
     @Test
     public void TestcreateStudent() {
-    	Student s = new Student ("ismail","kharaf","ismail@gmail.com");
+    	Student s = new Student ("ness","nasnous","nes@gmail.com",1);
     	studentrep.save(s);
     }
     
